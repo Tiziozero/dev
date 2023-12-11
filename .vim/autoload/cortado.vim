@@ -47,7 +47,8 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
   if !exists('g:cortado_italic_functions')
     let g:cortado_italic_functions = 1
   endif
-  hi Normal guifg=#d1c3ab guibg=#171b23 guisp=NONE gui=NONE cterm=NONE
+  " hi Normal guifg=#d1c3ab guibg=#171b23 guisp=NONE gui=NONE cterm=NONE
+  hi Normal guifg=#d1c3ab guibg=NONE guisp=NONE gui=NONE cterm=NONE
   hi Cursor guifg=#171b23 guibg=#f6e3c2 guisp=NONE gui=NONE cterm=NONE
   hi None guifg=NONE guibg=NONE guisp=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi CursorLineNr guifg=#e3ddd8 guibg=#222834 guisp=NONE gui=NONE cterm=NONE
@@ -70,8 +71,11 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
   hi CursorColumn guifg=NONE guibg=#222834 guisp=NONE gui=NONE cterm=NONE
   hi CursorLine guifg=NONE guibg=#171b23 guisp=NONE gui=NONE cterm=NONE
   hi QuickFixLine guifg=#171b23 guibg=#4791d1 guisp=NONE gui=NONE cterm=NONE
-  hi StatusLine guifg=#9a7d6a guibg=#222834 guisp=NONE gui=NONE cterm=NONE
-  hi StatusLineNC guifg=#363d49 guibg=#171b23 guisp=NONE gui=NONE cterm=NONE
+  " hi StatusLine guifg=#9a7d6a guibg=#222834 guisp=NONE gui=NONE cterm=NONE
+  " hi StatusLineNC guifg=#363d49 guibg=#171b23 guisp=NONE gui=NONE cterm=NONE
+  hi StatusLine guifg=#9a7d6a guibg=NONE gui=NONE ctermfg=137 ctermbg=NONE cterm=NONE
+  hi StatusLineNC guifg=#363d49 guibg=NONE gui=NONE ctermfg=237 ctermbg=NONE cterm=NONE
+
   hi VertSplit guifg=#322b2a guibg=NONE guisp=NONE gui=NONE cterm=NONE
   hi WildMenu guifg=#171b23 guibg=#d1c3ab guisp=NONE gui=NONE cterm=NONE
   hi IncSearch guifg=#171b23 guibg=#d1c3ab guisp=NONE gui=NONE cterm=NONE
