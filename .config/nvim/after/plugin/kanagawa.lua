@@ -1,5 +1,5 @@
 -- Default options:
-require('kanagawa').setup({
+--[[require('kanagawa').setup({
         compile = false,             -- enable compiling the colorscheme
         undercurl = true,            -- enable undercurls
         commentStyle = { italic = true },
@@ -35,7 +35,7 @@ background = {               -- map the value of 'background' option to a theme
 dark = "dragon",           -- try "dragon" !
 light = "lotus"
     },
-})
+})]]--
 -- setup must be called before loading
 --vim.cmd("colorscheme kanagawa")
 require('rose-pine').setup({
@@ -95,3 +95,10 @@ require('rose-pine').setup({
 
 -- Set colorscheme after options
 vim.cmd('colorscheme rose-pine')
+config = function()
+		vim.cmd.colorscheme("kissland")
+		vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+		vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+		vim.api.nvim_set_hl(0, "SignColumn", { bg = "none" })
+		vim.opt.fillchars = { eob = " " }
+	end

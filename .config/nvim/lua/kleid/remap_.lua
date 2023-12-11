@@ -55,5 +55,8 @@ vim.keymap.set('n', '<leader>w', [[:lua show_custom_text_right()<CR>]], { norema
 -- doesnt work. the line above
 --o
 vim.keymap.set('n', '<leader>gm', [[:lua commit_with_message(vim.fn.input("Commit message: "))<CR>]], { noremap = true, silent = true })
+vim.keymap.set('n', '<leader>py', '[[:terminal py<CR>]]', { noremap = true, silent = true })
+vim.keymap.set('n', 'qq', ':bd<CR>', { noremap = true, silent = true })
+vim.keymap.set('n', '<leader>com', '[[:terminal ./build.sh<CR>]]', { noremap = true, silent = true })
 
 

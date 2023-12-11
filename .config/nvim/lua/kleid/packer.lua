@@ -12,17 +12,19 @@ return require('packer').startup(function(use)
                 -- or                            , branch = '0.1.x',
                 requires = { {'nvim-lua/plenary.nvim'} }
         }
-        use( "rebelot/kanagawa.nvim" )
+        -- use( "rebelot/kanagawa.nvim" )
         use({ 'rose-pine/neovim', as = 'rose-pine' })
         use( 'nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'} )
         -- use( 'nvim-treesitter/playground' )
         use( 'ThePrimeagen/harpoon' )
-        use( 'mbbill/undotree' )
-        use( 'tpope/vim-fugitive' )
+        -- use( 'mbbill/undotree' )
+        -- use( 'tpope/vim-fugitive' )
         use {
                 'nvim-lualine/lualine.nvim',
                 requires = { 'nvim-tree/nvim-web-devicons', opt = true }
         }
+        -- to see images
+        -- use {'edluffy/hologram.nvim'}
         --[[ use {
                 'VonHeikemen/lsp-zero.nvim',
                 branch = 'v3.x',
