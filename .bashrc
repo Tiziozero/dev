@@ -55,3 +55,4 @@ export -f bbbbb1
 export -f bbbbb2
 
 # neofetch
+. "$HOME/.cargo/env"
